@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const images = [
     "daimyooo_Japanese_creation_Hoshino_Ai_full_body_view_detailed_b_11deb920-7c93-4e8b-913c-5488a21ba9da.png",
     "daimyooo_Japanese_creation_Hoshino_Ai_full_body_view_detailed_b_26503842-c97c-4e26-9aa3-d956c022c640.png",
-    "image3.jpg",
+    "daimyooo_Japanese_creation_Hoshino_Ai_full_body_view_detailed_b_832c4288-4d8e-4ff0-a411-9e980771496b.png",
     // Add more image URLs as needed
   ];
 
