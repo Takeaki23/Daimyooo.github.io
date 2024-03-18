@@ -1,17 +1,31 @@
 document.addEventListener("DOMContentLoaded", function() {
+  const gallery = document.querySelector(".gallery");
+  const loadMoreButton = document.querySelector(".button");
+
   // Placeholder array of image URLs
   const images = [
-    "daimyooo_Japanese_creation_Hoshino_Ai_full_body_view_detailed_b_11deb920-7c93-4e8b-913c-5488a21ba9da.png",
-    "daimyooo_Japanese_creation_Hoshino_Ai_full_body_view_detailed_b_26503842-c97c-4e26-9aa3-d956c022c640.png",
-    "daimyooo_Japanese_creation_Hoshino_Ai_full_body_view_detailed_b_832c4288-4d8e-4ff0-a411-9e980771496b.png",
+    "image1.jpg",
+    "image2.jpg",
+    "image3.jpg",
     // Add more image URLs as needed
   ];
 
-  const gallery = document.querySelector(".gallery");
+  // Function to add images to the gallery
+  function addImages() {
+    images.forEach(image => {
+      const imgElement = document.createElement("img");
+      imgElement.src = image;
+      gallery.appendChild(imgElement);
+    });
+  }
 
-  images.forEach(image => {
-    const imgElement = document.createElement("img");
-    imgElement.src = image;
-    gallery.appendChild(imgElement);
+  // Initial load of images
+  addImages();
+
+  // Event listener for "Load More" button click
+  loadMoreButton.addEventListener("click", function(event) {
+    event.preventDefault();
+    // You can add more images to the 'images' array dynamically here
+    // and then call the addImages() function again to append them to the gallery.
   });
 });
